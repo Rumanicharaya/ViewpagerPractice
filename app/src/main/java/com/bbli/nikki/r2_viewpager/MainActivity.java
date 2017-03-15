@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.astuetz.PagerSlidingTabStrip;
+
 public class MainActivity extends AppCompatActivity {
     FragmentPagerAdapter adapterViewPager;
 
@@ -16,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         ViewPager vpPager = (ViewPager) findViewById(R.id.vpPager);
         adapterViewPager= new MyPagerAdapter(getSupportFragmentManager());
         vpPager.setAdapter(adapterViewPager);
+        PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.vpPager);
+
     }
 
 }
